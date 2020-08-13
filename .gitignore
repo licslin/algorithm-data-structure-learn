@@ -7,6 +7,6 @@
 *.iml
 out
 gen
-src/com/licslan/week02/
-src/com/licslan/week03/
-src/com/licslan/week04/
+#src/com/licslan/week02/
+#src/com/licslan/week03/
+#src/com/licslan/week04/

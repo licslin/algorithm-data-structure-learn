@@ -68,6 +68,7 @@ public class SelectionSort {
      * 选择排序原地排序实现
      * */
     public static void sort(int[] arr){
+        //arr[0...i)有序  arr[i...n)无序
         for (int i = 0; i < arr.length; i++) {
             //arr[i...n)中最小的值索引  我们从i开始出发 一开始也是从0开始第一个元素开始
             int minIndex = i;

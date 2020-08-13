@@ -2,7 +2,7 @@ package com.licslan.week00;
 /**
  * @author LICSLAN 下定决心学算法与数据结构
  * */
-public class Student {
+public class Student implements Comparable<Student>{
 
     public Student(Integer age){
         this.age=age;
@@ -24,4 +24,18 @@ public class Student {
     }
 
 
+    @Override
+    public int compareTo(Student another) {
+        //        if(this.age>another.age)return 1;
+        //        else if(this.age==another.age)return 0;
+        //        else return -1;
+        //简写
+        return this.age-another.age;
+    }
+
+    //类的设计者维护
+    @Override
+    public String toString(){
+        return String.format("Student(age: %d)",age);
+    }
 }
